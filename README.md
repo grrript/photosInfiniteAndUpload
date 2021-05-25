@@ -1,8 +1,8 @@
-# This is a simple app that list photos
+# This is a simple app that list photos from picsum.photos
 
 1. Click a photo to view a larger size in a dialog box
 2. This has infinite scrolling (though max of 420 photos)
-3. Insert an photo right before the top most visible photo
+3. Insert a photo right before the top most visible photo
 
 # Getting Started with Create React App
 
