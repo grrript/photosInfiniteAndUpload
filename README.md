@@ -1,3 +1,9 @@
+# This is a simple app that list photos
+
+1. Click a photo to view a larger size in a dialog box
+2. This has infinite scrolling (though max of 420 photos)
+3. Insert an photo right before the top most visible photo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
