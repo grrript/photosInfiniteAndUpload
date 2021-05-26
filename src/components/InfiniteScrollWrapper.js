@@ -9,7 +9,7 @@ const InfiniteScrollWrapper = ({
   items,
   setItems,
   setPhotoId,
-  setPhoto,
+  setClickedPhoto,
   visibleItemsRef,
   page,
   setPage,
@@ -51,7 +51,7 @@ const InfiniteScrollWrapper = ({
       <PhotoList
         photos={items}
         setPhotoId={setPhotoId}
-        setPhoto={setPhoto}
+        setClickedPhoto={setClickedPhoto}
         containment={containmentDOMRect}
         visibleItemsRef={visibleItemsRef}
       />

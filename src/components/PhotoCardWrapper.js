@@ -1,6 +1,6 @@
 import PhotoCard from './PhotoCard'
 
-const PhotoCardWrapper = ({ photo, setPhotoId, setPhoto }) => {
+const PhotoCardWrapper = ({ photo, setPhotoId, setClickedPhoto }) => {
   const getSrc = () => {
     if (photo.local) {
       if (photo.local === true) {
@@ -16,7 +16,7 @@ const PhotoCardWrapper = ({ photo, setPhotoId, setPhoto }) => {
     <PhotoCard
       photo={photo}
       setPhotoId={setPhotoId}
-      setPhoto={setPhoto}
+      setClickedPhoto={setClickedPhoto}
       src={src}
     />
   )

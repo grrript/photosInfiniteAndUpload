@@ -4,7 +4,7 @@ import PhotoCardVisibilitySensor from './PhotoCardVisibilitySensor'
 const PhotoList = ({
   photos,
   setPhotoId,
-  setPhoto,
+  setClickedPhoto,
   containment,
   visibleItemsRef,
 }) => {
@@ -21,7 +21,7 @@ const PhotoList = ({
             <PhotoCardWrapper
               photo={photo}
               setPhotoId={setPhotoId}
-              setPhoto={setPhoto}
+              setClickedPhoto={setClickedPhoto}
             />
           </PhotoCardVisibilitySensor>
         )

@@ -8,7 +8,7 @@ import InfiniteScrollWrapper from './InfiniteScrollWrapper'
 const PhotoListApp = () => {
   const [open, setOpen] = useState(false)
   const [photoId, setPhotoId] = useState(-1)
-  const [photo, setPhoto] = useState({})
+  const [clickedPhoto, setClickedPhoto] = useState({})
   const [items, setItems] = useState([])
   const [page, setPage] = useState(1) // must start with 1 because the initial fetch uses page=0. page=1 is used for when loading the next group of images
   const visibleItemsRef = useRef([])
@@ -37,7 +37,7 @@ const PhotoListApp = () => {
         <InfiniteScrollWrapper
           page={page}
           setPage={setPage}
-          setPhoto={setPhoto}
+          setClickedPhoto={setClickedPhoto}
           items={items}
           setItems={setItems}
           setPhotoId={setPhotoId}
@@ -46,7 +46,7 @@ const PhotoListApp = () => {
         <PhotoDialog
           photoId={photoId}
           setPhotoId={setPhotoId}
-          photo={photo}
+          clickedPhoto={clickedPhoto}
           open={open}
           setOpen={setOpen}
         />

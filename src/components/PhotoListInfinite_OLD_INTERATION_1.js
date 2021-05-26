@@ -4,7 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor'
 const PhotoList = ({
   photos,
   setPhotoId,
-  setPhoto,
+  setClickedPhoto,
   containment,
   visibleItemsRef,
 }) => {
@@ -25,7 +25,7 @@ const PhotoList = ({
               key={photo.id}
               photo={photo}
               setPhotoId={setPhotoId}
-              setPhoto={setPhoto}
+              setClickedPhoto={setClickedPhoto}
               index={index}
             />
           )

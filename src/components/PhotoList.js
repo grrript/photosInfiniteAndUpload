@@ -1,7 +1,7 @@
 import usePicsumPhotos from '../hooks/usePicsumPhotos'
 import PhotoCard from './PhotoCard'
 
-const PhotoList = ({ setPhotoId, setPhoto }) => {
+const PhotoList = ({ setPhotoId, setClickedPhoto }) => {
   const photos = usePicsumPhotos()
 
   return (
@@ -9,7 +9,7 @@ const PhotoList = ({ setPhotoId, setPhoto }) => {
       {photos.map((photo, index) => {
         return (
           <PhotoCard
-            setPhoto={setPhoto}
+            setClickedPhoto={setClickedPhoto}
             key={index}
             photo={photo}
             setPhotoId={setPhotoId}

@@ -1,10 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 
-const PhotoCard = ({ photo, setPhotoId, setPhoto, src, index }) => {
+const PhotoCard = ({ photo, setPhotoId, setClickedPhoto, src, index }) => {
   const handleClick = () => {
     setPhotoId(photo.id)
-    setPhoto(photo)
+    setClickedPhoto(photo)
   }
   const useStylesForImage = makeStyles({
     hover: {

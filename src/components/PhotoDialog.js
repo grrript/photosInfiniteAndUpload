@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 
 const PhotoDialog = (props) => {
-  const { open, setOpen, setPhotoId, photoId, photo } = props
+  const { open, setOpen, setPhotoId, photoId, clickedPhoto } = props
 
   const useStyles = makeStyles({
     closeButton: {
@@ -32,7 +32,7 @@ const PhotoDialog = (props) => {
   return (
     <Dialog
       onClose={handleClose}
-      aria-labelledby={`selected photo is by ${photo.author}`}
+      aria-labelledby={`selected photo is by ${clickedPhoto.author}`}
       open={open}
     >
       <IconButton
@@ -45,10 +45,10 @@ const PhotoDialog = (props) => {
       <div
         className={classes.imgWrapper}
         role='img'
-        aria-label={`image by ${photo.author}`}
+        aria-label={`image by ${clickedPhoto.author}`}
       >
         <img
-          alt={`from picsum by ${photo.author}`}
+          alt={`from picsum by ${clickedPhoto.author}`}
           src={`https://picsum.photos/id/${photoId}/600/400
 `}
         />
